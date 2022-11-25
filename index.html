@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script defer type="module" src="./index.js"></script>
+    <title>Hanoi Tower Solver</title>
+</head>
+<body>
+    <main>
+        <header><h1>Hanoi Tower Solver</h1></header>
+        <section>
+            <article data-index="0">
+                <h3>A</h3>
+            </article>
+            <article data-index="1">
+                <h3>B</h3>
+            </article>
+            <article data-index="2">
+                <h3>C</h3>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <section>
+            <div>
+                <label for="hanoi-nodes-count">Hanoi Nodes Count <span id="hanoi-nodes-count">(5)</span></label>
+                <input name="hanoi-nodes-count" type="range" min="2" max="10" value="5">
+            </div>
+            <div>
+                <label for="speed">Speed</label>
+                <input name="speed" type="range" min="1" max="30" value="10">
+            </div>
+            <div>
+                <label>Progress</label>   
+                <progress value="0" max="100"></progress>
+            </div>
+        </section>
+        <section class="moves">
+        </section>
+    </aside>
+</body>
+</html>
