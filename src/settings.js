@@ -33,7 +33,6 @@ export class Settings {
     }
 
     onMovedEvent(movesCount){
-        console.log(Settings.instance.progressBar)
         Settings.instance.progressBar.value = (movesCount/Settings.instance.totalMovesCount)*100
     }
 
